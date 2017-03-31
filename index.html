@@ -4,89 +4,98 @@
     <meta charset="UTF-8">
     <title>Yurii Puzikov</title>
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="topnav id="mytopnav>
+            <div class="topnav" id="mytopnav">
                 <a href="#home">Home</a>
                 <a href="#topskills">Top skills</a>
                 <a href="#feedback">Feedback</a>
                 <a href="#contact">Contact</a>
             </div>
         </nav>
-        <img src="img/Untitled.png" class="topimg" id="topimg" alt="TopImg">
+        <img src="img/Header.png" id="headerimg" alt="headerimg">
     </header>
     <main>
         <section id="home">
-            <h1 id="hhome" class="hhome">Yurii Puzikov
-            <br>Sales Team Lead</h1>
-            <img src="img/OwE0k-TVTvo.jpg" alt="Yurii Puzikov" id="YuriiPuzikov">
-            <ul id="exp" class="exp">
-                <li>1.5 years in sales</li>
-                <li>7 months of managerial position</li>
-                <li>2.5 years in customer support</li>
-            </ul>
+            <div id="profile"> 
+                <div class="about">
+                    <div class="photo-inner"><img src="img/Photo.jpg" alt="Yurii Puzikov"></div>
+                    <h1>YURII 
+                    PUZIKOV</h1>
+                    <h3>Sales Team Lead</h3>
+                    <p>I love working with people and achieving set goals There is nothing that can stop me.</p>
+                </div>
+                <div class="personal-info">
+                <ul id="personal-info1">
+					<li>Name</li>
+                    <li>Date of Birth</li>
+                    <li>Address</li>
+                    <li>Email</li>
+                    <li>Phone</li>
+                </ul>
+                <ul id="personal-info2">
+					<li>Yurii Puzikov</li>
+                    <li>September 8, 1994</li>
+                    <li>Lviv, Ukraine</li>
+                    <li>sai_puzikov@hotmail.com</li>
+                    <li>+38 073 22 94 8 94</li>
+                </ul>
+                </div>
+            </div>        
         </section>
         <section id="topskills">
-            <h1 id="skillsh">Top skills </h1>
-            <p id="highskills">
-                <img src="img/sales-icon-30.png" alt="sales" height="150" width="150"> 
-                <img src="img/27141.png" alt="stragetic planning" height="150" width="300"> 
-                <img src="img/15872-200.png" alt="customer support" height="150" width="200">
-                <img src="img/Screwdriver_And_Wrench-128.png" alt="troubleshooting" height="150" width="200">
+            <h1 class="heading">Top skills</h1>
+            <p>
+                <img src="img/Sales.jpg" alt="sales"> 
+                <img src="img/stplanning.jpg" alt="stragetic planning"> 
+                <img src="img/customersupport.jpg" alt="customer support">
+                <img src="img/troublshoot.jpg" alt="troubleshooting">
+                <img src="img/Management.jpg" alt="Management"> 
+                <img src="img/coaching.jpg" alt="coaching"> 
+                <img src="img/persuasion.jpg" alt="persuasion">
+                <img src="img/English.jpg" alt="english">
             </p>
-            <div class="skilltext">
-                <p id="col1">Sales</p>
-                <p id="col2">Stragetic planning</p>
-                <p id="col3">Customer support</p>
-                <p id="col4">Troubleshooting</p>
-            </div>
-            <p id="downskills">
-                <img src="img/icon_31708.png" alt="management" height="150" width="200"> 
-                <img src="img/analityc_coaching3-128.png" alt="coaching" height="150" width="200"> 
-                <img src="img/863-512.png" alt="persuasion" height="150" width="200">
-                <img src="img/en-english-usa-language-text-translate-512.png" alt="English" height="200" width="200">
-            </p>
-            <div class="skilltext">
-                <p id="col1">Management</p>
-                <p id="col2">Coaching</p>
-                <p id="col3">Persuasion</p>
-                <p id="col4">English</p>
+        </section>
+        <section id="feedback">
+            <div id="Vsevolod">
+                <img src="img/Vsevolod.jpg" alt="Vsevolod" class="photofeedback">
+                <h1 class="heading">Feedback</h1>
+                <p>"True pro... Calm , and always ready to overcome hard-case. Very good in product presentation and always treats customers right. Strong sales person and outstanding team-leader".</p>
+                <p id="fromVsevolod">Vsevolod Mirchuk
+                <br>Business development manager</p>
             </div>
         </section>
+    </main>
     <footer id="contact">
-        <h1 id="hfooter" class="hfooter">Question? Suggestion? Project?
-            <br>Contact me</h1>
-           <div class="form"> 
+        <div class="form"> 
+            <h1 class="heading"><br><br>Let's keep in touch</h1>
             <form method="POST" action="https://formspree.io/sai_puzikov@hotmail.com">
-         <label id="fullname">Full name:
-            <input type="text" name="Full name" required>
-         </label>
-         <br>
-         <label>Email address:
-             <input type="email" name="Email" required>
-         </label>
-         <br>
-         <label>
-            <textarea name="Message" rows="10" cols="30">Text</textarea>
-         </label>
-         <br>
-         <input type="submit" value="Send!" id="send">
+                <p>
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" class="input" >
+                </p>
+                <p>
+                    <label for="email">Your Email</label>
+                    <input type="text" name="email" class="input">
+                </p>
+                <p>
+                    <label for="message">Your Message</label>
+                    <textarea name="message" cols="88" rows="6" class="textarea" ></textarea>
+                </p>
+                    <input type="submit" name="submit" value="Send your message" class="submit">
             </form>
-            </div>
-            <hr>
-            <div>
-                <p id="links">
-                <a href="https://github.com/YuriiPuzikov"><img src="img/git.jpg" alt="git" height="150" width="150"></a> 
-                <a href="https://www.linkedin.com/in/yurii-puzikov/"><img src="img/link.png" alt="linkeding" height="150" width="150"> </a>
-                <a href="https://www.facebook.com/puzia.has.no.brains"><img src="img/fb.png" alt="facebook" height="150" width="150"></a>
-                <a href="https://www.instagram.com/sai_puzia/"><img src="img/inst.png" alt="instagramm" height="150" width="150"></a>
+        </div>
+        <div id="links">
+            <p>
+                <br><br><br><br>
+                <a href="https://github.com/YuriiPuzikov"><img src="img/git.jpg" alt="git"</a>
+                <a href="https://www.linkedin.com/in/yurii-puzikov/"><img src="img/link.png" alt="linkeding"</a>
+                <a href="https://www.facebook.com/puzia.has.no.brains"><img src="img/fb.png" alt="facebook"</a>
+                <a href="https://www.instagram.com/sai_puzia/"><img src="img/inst.png" alt="instagramm"</a>
             </p>
-            </div>
-            
+        </div>
     </footer>
-    </main>   
-</body>
-</html>
